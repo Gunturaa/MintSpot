@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# systemd-sleep hook: auto-resume MintSpot 5 GHz hotspot after suspend/wake.
+# Install: sudo cp ~/Documents/mintspot/assets/mintspot-sleep /lib/systemd/system-sleep/mintspot && sudo chmod +x /lib/systemd/system-sleep/mintspot
+set -euo pipefail
+
+ENGINE="/home/gunturaa/Documents/mintspot/mintspot-engine"
+MARKER="/run/mintspot/resume-after-sleep"
+
+case "${1:-}" in
+  pre)
+    if [ -f /run/mintspot/state.json ]; then
+      mkdir -p /run/mintspot
+      touch "$MARKER"
+      "$ENGINE" stop >/dev/null 2>&1 || true
+    fi
+    ;;
+  post)
+    if [ -f "$MARKER" ]; then
+      rm -f "$MARKER"
+      (
+        sleep 4
+        "$ENGINE" start >/dev/null 2>&1 || true
+      ) &
+    fi
+    ;;
+esac

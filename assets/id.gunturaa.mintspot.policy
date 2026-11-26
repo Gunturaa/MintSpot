@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>MintSpot</vendor>
+  <vendor_url>https://github.com/gunturaa/mintspot</vendor_url>
+
+  <action id="id.gunturaa.mintspot.manage">
+    <description>Manage MintSpot 5 GHz Wi-Fi Hotspot</description>
+    <message>Authentication is required to start, stop, or configure MintSpot.</message>
+    <icon_name>mintspot</icon_name>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/home/gunturaa/Documents/mintspot/mintspot-engine</annotate>
+  </action>
+</policyconfig>

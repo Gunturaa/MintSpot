@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="mintBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22965B"/>
+      <stop offset="100%" stop-color="#13683D"/>
+    </linearGradient>
+    <linearGradient id="topSheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- macOS-style squircle tile -->
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="url(#mintBg)"/>
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="url(#topSheen)"/>
+  <rect x="7" y="7" width="114" height="114" rx="27" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5"/>
+
+  <!-- Personal Hotspot interlocking bridge rings (2.4 -> 5 GHz motif) -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="7.5" stroke-linecap="round">
+    <!-- Left ring (2.4 GHz uplink) -->
+    <circle cx="49" cy="64" r="19" stroke-opacity="0.92"/>
+    <!-- Right ring (5 GHz output) -->
+    <circle cx="79" cy="64" r="19" stroke-opacity="0.98"/>
+  </g>
+
+  <!-- Crisp overlap cutout & highlight to emphasize interlocking chain -->
+  <path d="M 64 52.5 A 19 19 0 0 1 68 64" fill="none" stroke="#187847" stroke-width="11" stroke-linecap="round"/>
+  <path d="M 64 52.5 A 19 19 0 0 1 68 64" fill="none" stroke="#FFFFFF" stroke-width="7.5" stroke-linecap="round"/>
+
+  <!-- Subtle 5 GHz upper wave accent -->
+  <path d="M 48 34 A 24 24 0 0 1 80 34" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-opacity="0.72"/>
+</svg>

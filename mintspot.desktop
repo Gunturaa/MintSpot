@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=MintSpot
+Comment=Personal 5 GHz Wi-Fi Direct Hotspot Bridge for Linux Mint
+Exec=/home/gunturaa/Documents/mintspot/mintspot-app
+Icon=mintspot
+Terminal=false
+Categories=Network;Settings;
+Keywords=hotspot;wifi;5ghz;mintspot;twinfi;bridge;iphone;
+StartupWMClass=id.gunturaa.MintSpot

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- macOS-style dimmed white Personal Hotspot icon (Hotspot Off) -->
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="8.8" cy="12" r="5.3"/>
+    <circle cx="15.2" cy="12" r="5.3"/>
+  </g>
+</svg>
